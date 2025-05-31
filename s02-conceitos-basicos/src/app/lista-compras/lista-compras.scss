@@ -46,15 +46,27 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
-    background: #007bff;
+
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s;
 }
 
-button:hover {
+button[type="submit"] {
+    background: #007bff;
+}
+
+button[type="button"] {
+    background: #ff0000;
+}
+
+button[type="submit"]:hover {
     background: #0056b3;
+}
+
+button[type="button"]:hover {
+    background: #ff3030;
 }
 
 table {
@@ -89,4 +101,8 @@ tr:nth-child(even) {
 input[type="checkbox"] {
     transform: scale(1.2);
     cursor: pointer;
+}
+
+.item-riscado {
+    text-decoration: line-through;
 }
