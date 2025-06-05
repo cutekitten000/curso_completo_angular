@@ -1,14 +1,17 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="nav">
   <span>Cadastro de clientes</span>
   <span class="spacer"></span>
-  <a routerLink="/cadastro">
-    <mat-icon fontIcon="feed"></mat-icon>  
-    Formulario
-  </a>
-  <a routerLink="/consulta" >
-    <mat-icon fontIcon="search"></mat-icon>
-    Consulta
-  </a>
+  <div class="links">
+    <a routerLink="/cadastro" class="ml-8">
+      <mat-icon fontIcon="feed"></mat-icon>
+      <span class="ml-5">Formulario</span>
+    </a>
+    <a routerLink="/consulta" class="ml-8">
+      <mat-icon fontIcon="search"></mat-icon>
+      <span class="ml-5">Consulta</span>
+    </a>
+  </div>
+
 </mat-toolbar>
 
 <router-outlet></router-outlet>
