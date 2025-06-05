@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [MatButtonModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
   protected title = 's03-crud-angular-material';
+
+  alert() {
+    alert('me clicou')
+  }
 }
