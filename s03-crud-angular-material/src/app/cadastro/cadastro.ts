@@ -6,6 +6,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { ClienteService } from '../auth/cliente';
 import { Cliente } from './cliente.model';
 
 
@@ -26,8 +27,10 @@ import { Cliente } from './cliente.model';
 export class Cadastro {
   cliente: Cliente = Cliente.newCliente();
 
+  constructor(private service: ClienteService) {}
+
   salvar() {
-    console.log("Dados do cliente: ", this.cliente);
+    this.service.salvar(this.cliente);
   }
 
 }
