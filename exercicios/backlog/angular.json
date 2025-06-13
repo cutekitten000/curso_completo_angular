@@ -6,6 +6,9 @@
     "backlog": {
       "projectType": "application",
       "schematics": {
+        "@schematics/angular:service": {
+          "type": "service"
+        },
         "@schematics/angular:component": {
           "style": "scss"
         }
