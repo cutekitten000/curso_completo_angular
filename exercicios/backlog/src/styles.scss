@@ -1,0 +1,40 @@
+@use '@angular/material' as mat;
+
+// Customize the entire app. Change :root to your selector if you want to scope the styles.
+:root {
+    @include mat.table-overrides((background-color: #a2d2ff,
+            header-headline-color: #000,
+            row-item-label-text-color: #303030,
+        ));
+
+    @include mat.toolbar-overrides((container-background-color: #a2d2ff,
+            container-text-color: #000,
+        ));
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #bde0fe;
+    color: #fff;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
